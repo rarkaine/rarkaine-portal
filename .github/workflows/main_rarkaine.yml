@@ -53,5 +53,5 @@ jobs:
         with:
           app-name: 'rarkaine'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_9A3A84A538B94E4E9A3D3A1EC77A7F37 }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_90D750AC10FA4EBFBD9A8F52B68AB0A4 }}
           package: .
