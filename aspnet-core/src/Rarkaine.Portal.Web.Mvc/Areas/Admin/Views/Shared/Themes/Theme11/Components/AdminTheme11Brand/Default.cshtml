@@ -1,0 +1,11 @@
+@using Rarkaine.Portal.Web.Areas.Admin.Models.Layout
+@using Rarkaine.Portal.Web.Areas.Admin.Views.Shared.Components.AdminLogo
+@model HeaderViewModel
+@{
+    Layout = null;
+    var skin = @Model.LoginInformations.Theme.BaseSettings.Layout.DarkMode ? "dark" : "light";
+}
+
+<a href="@Url.Action("Index", "Home", new {area = string.Empty})" target="_blank" class="brand-logo">
+    @await Component.InvokeAsync(typeof(AdminLogoViewComponent), new {LogoSkin = skin})
+</a>
