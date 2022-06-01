@@ -47,7 +47,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".github", ".github", "{2B63
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "workflows", "workflows", "{94B23F9E-0950-4573-940C-D9B2B62912E6}"
 	ProjectSection(SolutionItems) = preProject
-		..\.github\workflows\main_rarkaine.yml = ..\.github\workflows\main_rarkaine.yml
+		..\.github\workflows\main_arkaine.yml = ..\.github\workflows\main_arkaine.yml
 	EndProjectSection
 EndProject
 Global
