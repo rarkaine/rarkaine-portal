@@ -11,7 +11,7 @@ on:
 
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: windows-latest
 
     steps:
       - uses: actions/checkout@v2
@@ -21,13 +21,11 @@ jobs:
         with:
           dotnet-version: '6.0.x'
           include-prerelease: true
- 
+
       - name: Build with dotnet
-        working-directory: ./aspnet-core/src/Rarkaine.Portal.Web.Mvc
         run: dotnet build --configuration Release
 
       - name: dotnet publish
-        working-directory: ./aspnet-core/src/Rarkaine.Portal.Web.Mvc
         run: dotnet publish -c Release -o ${{env.DOTNET_ROOT}}/myapp
 
       - name: Upload artifact for deployment job
@@ -37,7 +35,7 @@ jobs:
           path: ${{env.DOTNET_ROOT}}/myapp
 
   deploy:
-    runs-on: ubuntu-latest
+    runs-on: windows-latest
     needs: build
     environment:
       name: 'Production'
@@ -55,5 +53,5 @@ jobs:
         with:
           app-name: 'rarkaine'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_90D750AC10FA4EBFBD9A8F52B68AB0A4 }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_8AEBC97360014706834947F8DB1CDDCE }}
           package: .
