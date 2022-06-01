@@ -21,14 +21,9 @@ jobs:
         with:
           dotnet-version: '6.0.x'
           include-prerelease: true
-        
-      - name: List Directoryteste
-        run: dir
-
-      - name: Go directory
-        run: cd aspnet-core/src/Rarkaine.Portal.Web.Mvc
-        
+ 
       - name: List Directory
+        working-directory: ./aspnet-core/src/Rarkaine.Portal.Web.Mvc
         run: dir
 
       - name: Build with dotnet
