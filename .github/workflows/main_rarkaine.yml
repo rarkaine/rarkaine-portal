@@ -26,7 +26,7 @@ jobs:
         run: dir
 
       - name: Go directory
-        run: cd aspnet-core\src\Rarkaine.Portal.Web.Mvc
+        run: cd aspnet-core/src/Rarkaine.Portal.Web.Mvc
         
       - name: List Directory
         run: dir
