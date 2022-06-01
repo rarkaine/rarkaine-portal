@@ -22,6 +22,9 @@ jobs:
           dotnet-version: '6.0.x'
           include-prerelease: true
 
+      - name: List Directory
+        run: dir
+
       - name: Build with dotnet
         run: dotnet build --configuration Release
 
