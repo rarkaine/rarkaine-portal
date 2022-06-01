@@ -21,18 +21,19 @@ jobs:
         with:
           dotnet-version: '6.0.x'
           include-prerelease: true
-
-
+          
       - name: Set up Node
       - uses: actions/setup-node@v2
         with:
           node-version: '14.x'
       
-      - name: Set up Yarn
-      - uses: borales/actions-yarn@v2.3.0
-
       - name: Set up Directory
         run: cd \aspnet-core\src\Rarkaine.Portal.Web.Mvc
+
+      - name: Set up Yarn
+      - uses: borales/actions-yarn@v2.3.0
+        with:
+          cmd: install
 
       - name: List Directory
         run: dir
