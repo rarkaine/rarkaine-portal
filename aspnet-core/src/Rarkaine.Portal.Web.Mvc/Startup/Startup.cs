@@ -125,7 +125,7 @@ namespace Rarkaine.Portal.Web.Startup
                 // Hangfire (Enable to use Hangfire instead of default job manager)
                 services.AddHangfire(config =>
                 {
-                    config.UseSqlServerStorage(_appConfiguration.GetConnectionString("Default"));
+                    config.UseSqlServerStorage(_appConfiguration.GetConnectionString("Hangfire"));
                 });
                 
                 services.AddHangfireServer();
@@ -276,7 +276,8 @@ namespace Rarkaine.Portal.Web.Startup
                     });
                 }
 
-                app.ApplicationServices.GetRequiredService<IAbpAspNetCoreConfiguration>().EndpointConfiguration
+                app.ApplicationServices.GetRequiredService<IAbpAspNetCoreConfiguration>()
+                    .EndpointConfiguration
                     .ConfigureAllEndpoints(endpoints);
             });
 

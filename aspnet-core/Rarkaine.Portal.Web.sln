@@ -1,4 +1,3 @@
-
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.1.32210.238
@@ -43,6 +42,13 @@ EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Rarkaine.Portal.Test.Base", "test\Rarkaine.Portal.Test.Base\Rarkaine.Portal.Test.Base.csproj", "{62EC592B-CC95-43C2-9736-0EC6E46B01FA}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Abp.AspNetZeroCore", "src\Abp.AspNetZeroCore\Abp.AspNetZeroCore.csproj", "{DFE88BDA-9722-4DC0-AE07-12AA5FA95B91}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".github", ".github", "{2B637291-AB85-4166-B636-A392E4D8FC4B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "workflows", "workflows", "{94B23F9E-0950-4573-940C-D9B2B62912E6}"
+	ProjectSection(SolutionItems) = preProject
+		..\.github\workflows\main_rarkaine.yml = ..\.github\workflows\main_rarkaine.yml
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -135,6 +141,8 @@ Global
 		{E09101B3-F77E-4C72-8465-7B430FA93AD1} = {F10AA149-2626-486E-85BB-9CD5365F3016}
 		{62EC592B-CC95-43C2-9736-0EC6E46B01FA} = {F10AA149-2626-486E-85BB-9CD5365F3016}
 		{DFE88BDA-9722-4DC0-AE07-12AA5FA95B91} = {AFAA0841-BD93-466F-B8F4-FB4EEC86F1FC}
+		{2B637291-AB85-4166-B636-A392E4D8FC4B} = {D04D9608-9CEB-4E0A-B548-410F7475E9F1}
+		{94B23F9E-0950-4573-940C-D9B2B62912E6} = {2B637291-AB85-4166-B636-A392E4D8FC4B}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {23CD4D4B-B131-473D-9ECB-5DD96E739671}
